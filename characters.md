@@ -20,9 +20,9 @@ NAME: Dapnhe
 
 SEX: F
 
-BIRTHDAY: 06/08/1997
+BIRTHDAY: ��/��/����
 
-AGE: \* **ERROR** \*
+AGE: �����
 
 ### Eva
 
