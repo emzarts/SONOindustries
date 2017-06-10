@@ -1,7 +1,9 @@
 # The Collapse of SONO Industries
 ### A Prisons and Phoenix Story Written By Rachel A. Boal and Programmed by Emily Zimmerman
 
+The Collapse of SONO Industries is a text based mystery game where players...
 
+# Introduction
 ## TOP SECRET - PROPERTY OF SONO IND.
 ### Secondary Life Support in Case of Emergencies: A Message from CEO John Samuels
 #### May 5th, 1979
