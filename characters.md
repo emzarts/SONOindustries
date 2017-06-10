@@ -22,6 +22,6 @@ SEX: F
 
 BIRTHDAY: 6/8/1997
 
-AGE: *ERROR*
+AGE: \*ERROR\*
 
 ### Eva
