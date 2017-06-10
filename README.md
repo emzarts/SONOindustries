@@ -1,2 +1,2 @@
 # The Collapse of SONO Industries
-## A Prisons and Phoenix Story Written By Rachel A. Boal
+### A Prisons and Phoenix Story Written By Rachel A. Boal and Programmed by Emily Zimmerman
