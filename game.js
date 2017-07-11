@@ -6,9 +6,6 @@ var showText = function(target, message, index, interval) {
     document.getElementById(target).append(result);
   	setTimeout(function() {showText(target, message.substring(index - message.length), index + 1, interval);}, interval);
     }
-    /*else {
-        input();
-    }*/
 }
 
 function startGame() {
@@ -21,10 +18,26 @@ function startGame() {
 
 }
 
+function handle(e){
+        e.preventDefault(); // Otherwise the form will be submitted
+
+        alert("FORM WAS SUBMITTED");
+    }
+
+function handleKeyPress(e){
+    var text = e.value;
+    var key=event.keyCode || e.which;
+    if (key==13){
+        alert("YOU DONE IT" + text);
+  }
+}
+
 function input() {
     document.getElementById("content2").append("> ");
     var x = document.createElement("INPUT");
     x.setAttribute("type", "text");
+    x.setAttribute("autofocus", "true");
+    x.setAttribute("onkeydown", "handleKeyPress(this)");
     document.getElementById("content2").append(x);
 }
 
