@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Collapse Of SONO Industries</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                box-sizing: border-box;
+                /*border: 2px solid red;*/
+                font-family: monospace;
+            }
+            
+            /*p {
+                font-size: 1.5em;
+            }*/
+            
+            h1, h3 {
+                font-family: monospace;
+                font-weight: normal;
+            }
+            
+            h1 {
+                font-size: 3.7em;  
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            
+            h3 {
+                font-size: 1.5em;
+            }
+            
+            body {
+                padding: 0;
+                margin: 0;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                height: 100vh;
+                width: 100vw;
+                justify-content: center;
+                color: white;
+                background-color: black;
+            }
+            
+            .content {
+                display: flex;
+                width: 80%;
+                height: 100%;
+                align-items: center;
+            }
+            
+            input {
+                background-color: black;
+                font-size: 1em;
+                color: white;
+                border: 0px;
+            }
+            
+            input:focus {
+                border: 1px solid transparent;
+            }
+            
+            .text {
+                width: 100%;
+            }
+            
+            #intro1 {
+                overflow: hidden;
+                width: 0;
+                animation: typing 1.5s steps(40, end);    
+                white-space: nowrap;
+                animation-delay: .3s;
+                animation-fill-mode: forwards;  
+            }
+            
+            #intro2 {
+                overflow: hidden;
+                width: 0;
+                animation: typing 1.5s steps(40, end);    
+                white-space: nowrap;
+                animation-delay: 1.1s;
+                animation-fill-mode: forwards;  
+            }
+            
+            #intro3 {
+                overflow: hidden;
+                width: 0;
+                animation: typing 1.5s steps(40, end);    
+                white-space: nowrap;
+                animation-delay: 2.6s;
+                animation-fill-mode: forwards;  
+            }
+            
+            #content1 {
+                transition: opacity 3s;
+                transition-delay: width 2s;
+            }
+            
+            #content2 {
+                font-size: 1.5em;
+                opacity: 0;  
+                transition-delay: 2s;
+            }
+            
+            .content button {
+                opacity: 0;
+                padding: 5px 10px 5px 10px;
+                margin: 0 auto;   
+                font-size: 2em;
+                animation: show 0s forwards;  
+                animation-delay: 4.8s;
+                color: white;
+                background-color: transparent;
+                border: 1px solid white;
+                background-image: url("static.gif");
+                background-size: 200px;
+                background-repeat: no-repeat;
+            }
+            
+            /* Text animation */
+            
+            @keyframes typing {
+                0% { width: 0 }
+                100% { width: 100% }
+            }
+            
+            @keyframes show {
+                0% {opacity: 0;}
+                100% {opacity: 100;}
+            }
+
+        </style>
+    </head>
+    <body>
+        <script src="Character.js"></script>
+        <script src="game.js"></script>
+
+        <div class="content">
+            <div class="text" id="content1">
+                <h3 id="intro1">Welcome to</h3>
+                <h1 id="intro2">The Collapse of SONO Industries</h1>
+                <h3 id="intro3">Story Written By Rachel A. Boal and Programmed by Emily Zimmerman</h3>
+                <br><br><br>
+                <button onclick="startGame()">BEGIN</button>
+            </div>
+            <div class="text" id="content2">
+                <p id="text"></p>
+            </div>
+        </div>
+    </body>
+</html>
