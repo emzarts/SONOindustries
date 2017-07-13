@@ -9,7 +9,8 @@ var showText = function(target, message, index, interval) {
         
     }
     if (game === true && message.length <= i) {
-            input();
+        console.log("heyooo");
+        input();
     }
     
 }
@@ -22,6 +23,7 @@ function intro() {
 
 function startGame() {
     game = true;
+
     document.getElementById("content1").style.opacity = "0";
     document.getElementById("content2").style.opacity = "1";
     setTimeout(function() {document.getElementById("content2").style.width = "100%";},1900);
@@ -31,7 +33,7 @@ function startGame() {
 }
 
 // add line break before the input
-
+var temp;
 function input() {
     document.getElementById("text").appendChild(document.createElement("br"));
     document.getElementById("text").append("> ");
@@ -41,28 +43,28 @@ function input() {
     x.setAttribute("autofocus", "true");
     x.setAttribute("onkeydown", "handleKeyPress(this)");
     document.getElementById("text").append(x);
+    temp = x;
 }
 
 function handleKeyPress(e){
     var text = e.value;
     var key=event.keyCode || e.which;
     if (key==13){
-        alert("you typed: " + text);
         keyPressEvent(text);
     }
 }
 
 function keyPressEvent(input) {
     document.getElementById("text").append(" " + input);
-    document.getElementById("input-box").style.display = "none";
+    document.getElementById("text").removeChild(document.getElementById("input-box"));
     document.getElementById("text").appendChild(document.createElement("br"));
+    console.log("here");
     if (input.toUpperCase() === "help".toUpperCase()) {
         showText("text","here is help",0,60);
     }
     else {
-        
+        window.input();
     }
-    input();
 }
 
 // make intro text with JS
